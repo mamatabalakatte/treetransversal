@@ -1,38 +1,42 @@
+# Tree Traversal Visualizer
 
+An interactive **Tree Traversal Visualizer** built using **C++**, **WebAssembly (WASM)**, **JavaScript**, **HTML**, and **CSS**. This project demonstrates Binary Search Tree (BST) traversal algorithms through an interactive web interface while executing the core logic in C++.
 
+---
 
+## Overview
 
-Tree Traversal Visualizer
-An interactive Tree Traversal Visualizer built using C++, WebAssembly (WASM), JavaScript, HTML, and CSS. The project demonstrates tree traversal algorithms through an interactive web interface while executing the core logic in C++.
+The Tree Traversal Visualizer is an educational tool that helps users understand how tree traversal algorithms work. The core algorithms are implemented in **C++** and compiled to **WebAssembly**, allowing them to run efficiently inside a web browser.
 
-Overview
-The project visualizes Binary Search Tree (BST) traversal algorithms and helps users understand how recursive tree traversals work. The C++ implementation is compiled to WebAssembly, enabling efficient execution directly in the browser.
+---
 
-Features
-Binary Search Tree (BST) visualization
+## Features
 
-Preorder Traversal
+* Binary Search Tree (BST) visualization
+* Preorder Traversal
+* Inorder Traversal
+* Postorder Traversal
+* Interactive visualization
+* C++ algorithms executed using WebAssembly
+* Responsive web interface
 
-Inorder Traversal
+---
 
-Postorder Traversal
+## Technologies Used
 
-Interactive visualization
+| Technology             | Purpose                              |
+| ---------------------- | ------------------------------------ |
+| **C++**                | Implements tree traversal algorithms |
+| **WebAssembly (WASM)** | Executes C++ code in the browser     |
+| **JavaScript**         | Connects the UI with WebAssembly     |
+| **HTML5**              | Defines the application structure    |
+| **CSS3**               | Styles the user interface            |
 
-C++ algorithms executed using WebAssembly
+---
 
-Responsive web interface
+## Project Structure
 
-Technologies Used
-Technology	Purpose
-C++	Core tree algorithms
-WebAssembly (WASM)	Executes C++ in the browser
-JavaScript	Connects the UI with WebAssembly
-HTML	Application structure
-CSS	User interface styling
-
-
-Project Structure
+```text
 Tree-Traversal-Visualizer/
 │
 ├── index.html
@@ -47,80 +51,122 @@ Tree-Traversal-Visualizer/
 ├── app.py
 ├── requirements.txt
 └── README.md
+```
 
+---
 
-Project Workflow
+## Project Workflow
+
+```mermaid
 flowchart TD
     A[index.html] --> B[script.js]
     B --> C[tree.wasm]
     C --> D[C++ Tree Algorithms]
     A --> E[style.css]
+```
 
+---
 
-How It Works
-The user opens the application in a web browser.
+## How It Works
 
-index.html loads the interface.
+1. Open the application in a web browser.
+2. `index.html` loads the user interface.
+3. `script.js` loads the WebAssembly module.
+4. The WebAssembly module executes the C++ traversal algorithms.
+5. The traversal results are returned to JavaScript.
+6. JavaScript updates the visualization in real time.
 
-script.js loads the WebAssembly module.
+---
 
-The WebAssembly module executes the C++ tree algorithms.
+## How to Run the Project
 
-Traversal results are returned to JavaScript.
+### Run the Web Application
 
-The visualization updates in real time.
+Clone the repository:
 
-How to Run the Project
-Run the Web Application
-Open the project folder:
+```bash
+git clone https://github.com/mamatabalakatte/treetransversal.git
+cd treetransversal
+```
 
-cd Tree-Traversal-Visualizer
-Start a local web server:
+Start a local server:
 
+```bash
 python3 -m http.server 8000
-Open the application in your browser:
+```
 
+Open your browser and visit:
+
+```text
 http://localhost:8000/
-Optional: Run the C++ Version
-Compile the C++ source:
+```
 
+### Optional: Run the C++ Version
+
+Compile the source code:
+
+```bash
 g++ main.cpp BST.cpp -o TreeVisualizer
+```
+
 Run the executable:
 
+```bash
 ./TreeVisualizer
-Project Outcomes
-This project demonstrates the following concepts:
+```
 
-Tree Traversal Logic
+---
 
-Implements Preorder, Inorder, and Postorder traversal algorithms.
+## Project Outcomes
 
-Demonstrates the sequence in which tree nodes are visited.
+### Tree Traversal Logic
 
-Recursion
+* Implements Preorder, Inorder, and Postorder traversal.
+* Demonstrates the order in which nodes are visited.
 
-Uses recursive functions to traverse binary trees.
+### Recursion
 
-Illustrates recursive processing of left and right subtrees.
+* Uses recursive functions to traverse binary trees.
+* Demonstrates recursive processing of left and right subtrees.
 
-Hierarchical Data Representation
+### Hierarchical Data Representation
 
-Represents data using a tree structure with parent-child relationships.
+* Represents data using parent-child relationships.
+* Visualizes the hierarchical structure of a binary tree.
 
-Visualizes the hierarchical organization of nodes.
+### Algorithm Visualization
 
-Algorithm Visualization
+* Provides an interactive visualization of traversal execution.
+* Helps users understand traversal step by step.
 
-Provides an interactive, step-by-step visualization of traversal operations.
+### WebAssembly Integration
 
-WebAssembly Integration
+* Executes C++ algorithms directly in the browser.
+* Improves execution speed while keeping the interface interactive.
 
-Executes C++ algorithms efficiently in the browser using WebAssembly.
+---
 
+## Future Enhancements
 
-Author
-Mamata Balakatte
+* AVL Tree Visualization
+* Red-Black Tree Visualization
+* Trie Visualization
+* Segment Tree Visualization
+* Level Order Traversal
+* Traversal Speed Controls
+* Enhanced Animations
+* Dark Mode Support
 
-GitHub: https://github.com/mamatabalakatte
+---
 
+## Author
 
+**Mamata Balakatte**
+
+GitHub: **https://github.com/mamatabalakatte**
+
+---
+
+## License
+
+This project is intended for educational and learning purposes.
