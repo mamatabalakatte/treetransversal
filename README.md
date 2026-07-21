@@ -82,6 +82,9 @@ flowchart TD
 
 ### Run the Web Application
 
+https://mamatabalakatte.github.io/treetransversal/
+
+
 Clone the repository:
 
 ```bash
@@ -146,16 +149,6 @@ Run the executable:
 
 ---
 
-## Future Enhancements
-
-* AVL Tree Visualization
-* Red-Black Tree Visualization
-* Trie Visualization
-* Segment Tree Visualization
-* Level Order Traversal
-* Traversal Speed Controls
-* Enhanced Animations
-* Dark Mode Support
 
 ---
 
@@ -167,6 +160,4 @@ GitHub: **https://github.com/mamatabalakatte**
 
 ---
 
-## License
 
-This project is intended for educational and learning purposes.
